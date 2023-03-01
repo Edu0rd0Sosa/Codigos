@@ -2,8 +2,6 @@
 son los códigos que he realizado en clases
 #dia 16-feb-2023 sosa vera jesus eduardo 
 #personaje y conbate RPG 
-
-
 class personaje :
     def __init__(self,nombre,inteligencia,defensa,ataque,vida) -> None:   #aki se declaran las variables que se van a utilisar :v
       self.nombre =nombre
@@ -39,6 +37,7 @@ class personaje :
             print("Vida de", enemigo.nombre, "es", enemigo.vida)
         else:
             enemigo.morir()
+
 class guerrero(personaje): #esta hereda la clase de personaje para crear una nueva 
     def __init__(self, nombre, inteligencia, defensa, ataque, vida,espada) -> None:
         super().__init__(nombre, inteligencia, defensa, ataque, vida)
@@ -86,4 +85,4 @@ combate(personaje_1, personaje_2)#finalmente conbaten (el guerrero esta roto :v)
 
 
 
-#autor=sosa vera jesus eduardo
+#autor=sosa vera jesus eduardo    
